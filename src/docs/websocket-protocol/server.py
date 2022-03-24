@@ -73,7 +73,7 @@ class WebSocketClientConnection(WebSocketProtocol):
                     except socket.timeout:
                         self.ping()
                         continue
-                except KeyboardInterrupt:
+                except (KeyboardInterrupt, ConnectionResetError):
                     break
 
             if data:

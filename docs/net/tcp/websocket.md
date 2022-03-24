@@ -159,3 +159,28 @@ RFC 6455 定义了多个 WebSocket 状态码:
 - 1002, 代表通信方因 protocol error 关闭连接
 
 更详细的状态码及说明, 可以参看 [RFC 6455 Section 7.4.1](https://tools.ietf.org/html/rfc6455#section-7.4.1)
+
+## 第三方库实现
+
+### Python
+
+#### Client
+
+- https://github.com/websocket-client/websocket-client
+
+#### Server
+
+### C/C++
+
+#### Client
+
+- https://doc.qt.io/qt-5/qwebsocket.html
+
+#### Server
+
+### Golang
+
+#### Client
+
+#### Server
+

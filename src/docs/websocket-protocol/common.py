@@ -106,7 +106,7 @@ class WebSocketProtocol(object):
             for i in range(len(frame.PayloadData)):
                 chunk = frame.PayloadData[i] ^ frame.MaskingKey[i % 4]
                 payload_data.append(chunk)
-            frame.PayloadData = payload_data
+            frame.PayloadData = bytes(payload_data)
 
         log.debug(frame)
         # log.debug(WebSocketProtocol.pack_frame_to_data(frame))
