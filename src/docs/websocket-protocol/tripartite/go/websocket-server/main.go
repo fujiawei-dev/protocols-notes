@@ -190,7 +190,7 @@ func WebsocketServer(router *gin.Engine) {
 	hub := newHub()
 	go hub.run()
 
-	router.GET("/", func(c *gin.Context) {
+	router.GET("/api/v1/ws/x", func(c *gin.Context) {
 		conn, err := crossSiteUpgrader.Upgrade(c.Writer, c.Request, nil)
 		if err != nil {
 			log.Error().Msgf("ws: %v", err)

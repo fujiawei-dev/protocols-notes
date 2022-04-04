@@ -41,7 +41,7 @@ if __name__ == "__main__":
     )
 
     ws.run_forever(
-        ping_interval=5,
-        ping_timeout=3,
-        ping_payload="ping",
+        # ping_interval=83,
+        # ping_timeout=81,
+        # ping_payload="keep alive",
     )
