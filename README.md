@@ -44,3 +44,7 @@ draft: false  # 草稿
 - [实现简单应用层协议的解析器](docs/net/tcp/application-layer-protocol.md)
 - [TCP 协议详解](docs/net/tcp/README.md)
 - [用 Scapy 实现 TCP 握手协议](docs/net/tcp/tcp_handshake_with_scapy.md)
+
+#### HTTP
+
+- [HTTP Basic 和 Digest 认证介绍与计算](docs/net/tcp/http/auth.md)
