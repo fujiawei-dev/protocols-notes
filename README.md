@@ -38,12 +38,14 @@ draft: false  # 草稿
 
 ## 计算机网络
 
+### IP
+
 - [ICMP 协议详解](docs/net/ip/icmp.md)
+- [TCP 协议详解](docs/net/ip/tcp.md)
+- [用 Scapy 实现 TCP 握手协议](docs/net/ip/tcp_handshake.md)
 
 ### TCP
 
-- [TCP 协议详解](docs/net/tcp/README.md)
-- [用 Scapy 实现 TCP 握手协议](docs/net/tcp/tcp_handshake_with_scapy.md)
 - [实现简单应用层协议的解析器](docs/net/tcp/application-layer-protocol.md)
 
 #### HTTP

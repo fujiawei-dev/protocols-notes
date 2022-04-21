@@ -3,7 +3,7 @@ date: 2022-04-03T18:57:43+08:00
 author: "Rustle Karl"
 
 title: "用 Scapy 实现 TCP 握手协议"
-url:  "posts/protocols/docs/net/tcp/tcp_handshake_with_scapy"  # 永久链接
+url:  "posts/protocols/docs/net/ip/tcp_handshake"  # 永久链接
 tags: [ "Protocols", "README" ]  # 标签
 series: [ "Protocols 学习笔记" ]  # 系列
 categories: [ "学习笔记" ]  # 分类
@@ -14,7 +14,7 @@ draft: false  # 草稿
 
 ## 前言
 
-Windows 上无法模拟，Windows 内核会在服务器回送 SYN_ACK 时，发送一个 RST 重置包，导致连接不成功，这是不可避免的，本质上，Scapy 在用户空间中运行，Windows 内核将首先接收到 SYN-ACK。在用 scapy 做任何事情之前，Windows 内核将发送一个 TCP RST，因为 Scapy 实际上没有真正打开一个套接字。
+Windows 上无法模拟，Windows 内核会在服务器回送 SYN_ACK 时，发送一个 RST 重置包，导致连接不成功，这是不可避免的，本质上，Scapy 在用户空间中运行，Windows 内核将首先接收到 SYN-ACK。在用 scapy 做任何事情之前，Windows 内核将发送一个 TCP RST。
 
 所以发送一方只能是 Linux。至少两台 Linux，不能发给自己。
 
